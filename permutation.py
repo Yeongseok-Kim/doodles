@@ -29,5 +29,5 @@ def permutation(n,s):
         print(s)
 
 s=[1,2,3,4,5,6]
-n=4
-permutation(s,n)
+n=6
+permutation(n,s)
