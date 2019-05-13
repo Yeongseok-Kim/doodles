@@ -15,15 +15,11 @@ def permutation(n,s):
         k=n
         while s[m-1]>s[k-1]:
             k=k-1
-        swap=s[m-1]
-        s[m-1]=s[k-1]
-        s[k-1]=swap
+        s[m-1],s[k-1]=s[k-1],s[m-1]
         p=m+1
         q=n
         while p<q:
-            swap=s[p-1]
-            s[p-1]=s[q-1]
-            s[q-1]=swap
+            s[p-1],s[q-1]=s[q-1],s[p-1]
             p=p+1
             q=q-1
         print(s)
